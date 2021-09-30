@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+import Product from "./components/Product/Product";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container" id="title">
+      <h1>mahdi</h1>
+        <Product name="reactjs" price="100 $" />
+        <Product name="nodejs"  price="250 $" />
+        <Product name="vuejs" price="40 $">
+          <p>discout is 15%</p>
+          </Product>
     </div>
   );
-}
-
+};
 export default App;
