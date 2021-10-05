@@ -1,5 +1,6 @@
-import react from "react";
 import React, { useState } from "react";
+import CounterClass from "./components/ClassCounter";
+import HookCounter from "./components/HookCounter";
 import Product from "./components/Product/Product";
 // class App extends react.Component {
 //    state = {
@@ -41,9 +42,9 @@ const App = () => {
   ]);
   const clickHandler = () => {
     setProducts([
-      { title: "html", price: "99 $" },
-      { title: "css", price: "120 $" },
-      { title: "javacript", price: "200 $" },
+      { title: "html", price: "199 $" },
+      { title: "css", price: "259 $" },
+      { title: "javacript", price: "299 $" },
     ]);
   };
   return (
@@ -55,6 +56,7 @@ const App = () => {
       <button type="button" onClick={clickHandler}>
         change
       </button>
+      <CounterClass/>
     </div>
   );
 };
