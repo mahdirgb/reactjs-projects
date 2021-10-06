@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import CounterClass from "./components/ClassCounter";
 import HookCounter from "./components/HookCounter";
+import HookObject from "./components/HookObject";
 import Product from "./components/Product/Product";
 // class App extends react.Component {
 //    state = {
@@ -57,6 +58,7 @@ const App = () => {
         change
       </button>
       <CounterClass/>
+      <HookObject/>
     </div>
   );
 };
